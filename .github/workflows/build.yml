@@ -8,7 +8,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Changed from ubuntu-latest to ubuntu-22.04 to fix the libtinfo5 error
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout Code
